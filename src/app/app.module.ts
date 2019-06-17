@@ -33,6 +33,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
 
+import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +63,10 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     MatDialogModule,
     FlexLayoutModule,
-    FormsModule 
+    FormsModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    ReactiveFormsModule
   ],
   providers: [DishService, 
     PromotionService,
